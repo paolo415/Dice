@@ -1,4 +1,5 @@
 int r;
+int c=0;
 
 void setup()
 {
@@ -57,21 +58,25 @@ class Die //models one single dice cube
     fill(255,255,255);
   if (r==1){
       ellipse(myX+25,myY+25,10,10);
+      c=1;
   }
   if (r==2){
       ellipse(myX+10,myY+10,10,10);
       ellipse(myX+40,myY+40,10,10);
+      c=16;
   }
   if (r==3){
       ellipse(myX+25,myY+25,10,10);
       ellipse(myX+10,myY+10,10,10);
       ellipse(myX+40,myY+40,10,10);
+      c=27;
   }
   if (r==4){
       ellipse(myX+15,myY+15,10,10);
       ellipse(myX+15,myY+35,10,10);
       ellipse(myX+35,myY+15,10,10);
       ellipse(myX+35,myY+35,10,10);
+      c=64;
   }
   if (r==5){
       ellipse(myX+25,myY+25,10,10);
@@ -79,6 +84,7 @@ class Die //models one single dice cube
       ellipse(myX+40,myY+40,10,10);
       ellipse(myX+40,myY+10,10,10);
       ellipse(myX+10,myY+40,10,10);
+      c=125;
   }
   if (r==6){
       ellipse(myX+15,myY+12,10,10);
@@ -87,7 +93,9 @@ class Die //models one single dice cube
       ellipse(myX+35,myY+25,10,10);
       ellipse(myX+35,myY+38,10,10);
       ellipse(myX+15,myY+38,10,10);
+      c=216;
   }
+  text("Total number of dots: " +c,168,450);
  }
   void showblue()
   {
