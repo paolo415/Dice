@@ -33,6 +33,9 @@ void draw()
       j--;
 
     }
+      text("Total number of dots: " +c,168,450);
+  text("Total number of blue die dots: " +b,168,470);
+  text("Total number of red die dots: " +(c-b),168,490);
 }
 
 void mousePressed()
@@ -103,9 +106,7 @@ class Die //models one single dice cube
       c=216;
       b=36;
   }
-  text("Total number of dots: " +c,168,450);
-  text("Total number of blue die dots: " +b,168,470);
-  text("Total number of red die dots: " +(c-b),168,490);
+
  }
   void showblue()
   {
